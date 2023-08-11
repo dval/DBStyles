@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Color Picker</title>
+    <style>
+        body {
+            background-color: #e6e6e6;
+            color: #464646;
+        }
+        .color-box {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #color-picker {
+            display: inline-block;
+            width: 300px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #2f2e30;
+                color: #dfdfdf;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="color-picker"></div>
+    <!--button id="changeColor">Change DIV Color</button-->
+</body>
+<script src="script.js"></script>
+
+</html>

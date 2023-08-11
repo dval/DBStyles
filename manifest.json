@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "DBStyles",
+    "description": "This extension changes the color of a background.",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.dropbox.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
